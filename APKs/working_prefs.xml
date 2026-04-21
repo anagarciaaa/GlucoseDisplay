@@ -1,0 +1,542 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <boolean name="miband_feature_switch_display_on_wrist" value="true" />
+    <string name="bg_unclear_readings_alert_reraise_sec">60</string>
+    <boolean name="retrieve_blukon_history" value="false" />
+    <boolean name="bg_from_filtered" value="false" />
+    <boolean name="bg_compensate_noise" value="true" />
+    <boolean name="bridge_battery_alerts" value="false" />
+    <boolean name="flash_torch_alerts_charging" value="false" />
+    <string name="xplus_liver_sensitivity">2</string>
+    <boolean name="miband_graph_treatment_enable" value="true" />
+    <string name="opennov_prime_minutes">2</string>
+    <boolean name="force_lock_screen_text_color" value="true" />
+    <boolean name="bg_alerts_from_main_menu" value="false" />
+    <boolean name="g5_bluetooth_watchdog" value="true" />
+    <boolean name="bluetooth_excessive_wakelocks" value="false" />
+    <int name="color_home_chart_background" value="-14606047" />
+    <boolean name="miband_feature_goal_notification" value="true" />
+    <boolean name="nfc_meter_enabled" value="false" />
+    <boolean name="aggressive_service_restart" value="true" />
+    <boolean name="show_raw_plot" value="true" />
+    <boolean name="tidepool_only_while_charging" value="false" />
+    <int name="color_notification_chart_background" value="0" />
+    <boolean name="cloud_storage_tidepool_enable" value="false" />
+    <boolean name="bluejay_send_status_line" value="false" />
+    <boolean name="other_alerts_override_silent" value="false" />
+    <boolean name="bg_notifications" value="false" />
+    <boolean name="vehicle_mode_enabled" value="false" />
+    <boolean name="bluetooth_trust_autoconnect" value="true" />
+    <boolean name="tidepool_only_while_unmetered" value="false" />
+    <string name="bg_predict_alert_sound">content://settings/system/notification_sound</string>
+    <boolean name="show_statistics_median" value="true" />
+    <boolean name="miband_send_alarms" value="true" />
+    <string name="share_key">SM00000000</string>
+    <boolean name="warning_agreed_to" value="true" />
+    <string name="xplus_insulin_dia">3.0</string>
+    <boolean name="ob1_g5_use_insufficiently_calibrated" value="true" />
+    <boolean name="predict_lows" value="true" />
+    <string name="keks_p3">308187020100301306072a8648ce3d020106082a8648ce3d030107046d306b0201010420007cfbd596f6e74477b8c0e9f6f7a174275e101ef6bf7d18caf01181d127b579a144034200045118c35e9e41e7e0654fee801c52a9c5dfc510ef09597d5cca8461e4af9c666714834f2bc903f16fabfc45755b0183f1a09745cdffcb4e2f799e50bed9a6b58c</string>
+    <string name="broadcast_to_pebble_type">2</string>
+    <boolean name="clfollow_download_finger_bgs" value="true" />
+    <string name="clfollow_country">gb</string>
+    <boolean name="miband_screen_battery" value="true" />
+    <boolean name="plot_motion" value="true" />
+    <boolean name="disable_wearG5_on_lowbattery" value="false" />
+    <boolean name="ob1_g5_allow_resetbond" value="false" />
+    <int name="color_low_values" value="-3995383" />
+    <boolean name="speak_alerts" value="false" />
+    <boolean name="bluetooth_frequent_reset" value="false" />
+    <int name="color_calibration_dot_background" value="-1" />
+    <long name="xdrip-plus-installed-time" value="1660018745299" />
+    <boolean name="pebble_display_trend" value="true" />
+    <int name="color_inrange_bg_values" value="-1" />
+    <boolean name="broadcast_data_through_intents_without_permission" value="true" />
+    <boolean name="fetch_iob_from_companion_app" value="true" />
+    <boolean name="bg_predict_alert_override_silent" value="false" />
+    <boolean name="show_pseudo_filtered" value="true" />
+    <boolean name="miband_enabled" value="false" />
+    <boolean name="warn_nightscout_multi_site_upload_failure" value="true" />
+    <int name="color_number_wall_shadow" value="-16777216" />
+    <string name="keks_p2">308201cd30820174a003020102021419052fcc17530bfa56e49dcafcdacf853ce5ba73300a06082a8648ce3d04030230133111300f06035504030c084445583033504731301e170d3233303431343130323831345a170d3235303431333130323831335a303a3138303606035504030c2f30312c303030302c303330304c514543437a4142417741412c63696f69653356625132686c5a4d6a64556d357267413059301306072a8648ce3d020106082a8648ce3d030107034200045118c35e9e41e7e0654fee801c52a9c5dfc510ef09597d5cca8461e4af9c666714834f2bc903f16fabfc45755b0183f1a09745cdffcb4e2f799e50bed9a6b58ca37f307d300c0603551d130101ff04023000301f0603551d2304183016801488f61e81bc4b17f05c6b1be2991d60087ccedd79301d0603551d250416301406082b0601050507030206082b06010505070301301d0603551d0e04160414d309e75c0725412d7a7922e3aacfb27f7ebd6be0300e0603551d0f0101ff0404030205a0300a06082a8648ce3d0403020347003044022048d4868cf393d9044101b6f07fd68d7f0642805f85da74e2fe9de8dd3507f02702201cd1bf7c6c7edd59435e324925fcf0ebb3cae2110d79407c77aa3b93b7bc04cb</string>
+    <string name="keks_p1">308201ea3082018fa00302010202142f3c52b6eb08701046d45d78ce81784c9dfe5240300a06082a8648ce3d04030230133111300f06035504030c084445583030504731301e170d3230313033303135353930345a170d3335313032373135353930345a30133111300f06035504030c0844455830335047313059301306072a8648ce3d020106082a8648ce3d03010703420004fb1aca21d8aeec9a4eb51f85304953d977a1ad569799250ff863987f42a3cd9fa4ff571eb568bc6c396277c3dcb51dedaee85513c80a5c4435538a19f5a96348a381c03081bd300f0603551d130101ff040530030101ff301f0603551d230418301680149e0f1e36f3f276a701fe8e883a6e26a635bd6afc305a0603551d1f04533051304fa034a0328630687474703a2f2f63726c2e64702e736161732e7072696d656b65792e636f6d2f63726c2f44455830305047312e63726ca217a41530133111300f06035504030c084445583030504731301d0603551d0e0416041488f61e81bc4b17f05c6b1be2991d60087ccedd79300e0603551d0f0101ff040403020186300a06082a8648ce3d0403020349003046022100aa69cd897ec663af5f9e158187df6851ff0756f00c401624564f81a19f5a0785022100daebb9fdb163b731eb0661f1c0a1932871a50e399ad1c6f519eabd4c9e7ba013</string>
+    <boolean name="miband_option_call_notifications" value="false" />
+    <boolean name="status_line_high" value="false" />
+    <boolean name="xdrip_webservice_open" value="false" />
+    <string name="custom_sync_key">22CBA8C5138487D20532C3C8F3680F5E</string>
+    <string name="clfollow_patient"></string>
+    <boolean name="inpen_orphan_primes_ignored" value="true" />
+    <boolean name="miband_vibrate_on_readings" value="true" />
+    <boolean name="predictive_bg" value="false" />
+    <boolean name="use_number_icon" value="false" />
+    <boolean name="using_g6" value="true" />
+    <boolean name="miband_screen_activity" value="true" />
+    <boolean name="ob1_minimize_scanning" value="false" />
+    <string name="miband_graph_hours">4</string>
+    <string name="webfollow_proxy_port"></string>
+    <boolean name="plus_follower_save_power" value="true" />
+    <boolean name="show_statistics_absolutes" value="true" />
+    <string name="amazfit_watchface_graph_hours">4</string>
+    <boolean name="profile_import_sound" value="false" />
+    <boolean name="store_logs" value="false" />
+    <boolean name="status_line_pump_reservoir" value="false" />
+    <boolean name="pebble_vibe_alerts" value="false" />
+    <string name="cloud_storage_mongodb_collection">entries</string>
+    <string name="calibration_reminder_hours">24</string>
+    <boolean name="nfc_scan_vibrate" value="true" />
+    <boolean name="auto_y_pan" value="true" />
+    <string name="lowValue">70</string>
+    <boolean name="enable_wear_auto_update" value="true" />
+    <boolean name="falling_alert" value="false" />
+    <boolean name="aod_use_top_center" value="true" />
+    <boolean name="cloud_storage_mongodb_enable" value="false" />
+    <string name="cloud_storage_influxdb_password">root</string>
+    <int name="color_average2_line" value="-3838051" />
+    <string name="dex_txid">0121</string>
+    <boolean name="plus_follow_master" value="false" />
+    <string name="default_ymax">250</string>
+    <string name="pebble_special_value">99</string>
+    <boolean name="desert_sync_enabled" value="false" />
+    <int name="color_high_values" value="-17613" />
+    <int name="color_heart_rate1" value="723595230" />
+    <boolean name="number_icon_large_arrow" value="false" />
+    <string name="numberwall_s_param">10</string>
+    <boolean name="pendiq_send_treatments" value="false" />
+    <boolean name="miband_nightmode_enabled" value="false" />
+    <boolean name="lefun_send_alarms" value="true" />
+    <boolean name="I_understand" value="true" />
+    <boolean name="Customize_yRange" value="false" />
+    <boolean name="opennov_remove_priming" value="false" />
+    <string name="nfc_test_diagnostic"></string>
+    <boolean name="bypass_calibration_quality_check" value="false" />
+    <boolean name="interpret_raw" value="false" />
+    <boolean name="nfc_scan_beep" value="false" />
+    <int name="color_upper_flair_bar" value="0" />
+    <boolean name="aod_use_bottom" value="true" />
+    <boolean name="lefun_option_shake_snoozes" value="true" />
+    <boolean name="miband_feature_show_date" value="true" />
+    <boolean name="cloud_storage_api_skip_download_from_xdrip" value="true" />
+    <boolean name="use_pendiq" value="false" />
+    <string name="other_alerts_sound">content://settings/system/alarm_alert</string>
+    <boolean name="aod_use_center_bottom" value="true" />
+    <boolean name="miband_send_readings" value="true" />
+    <boolean name="engineering_mode" value="false" />
+    <boolean name="pref_amazfit_watchface_graph_dots" value="false" />
+    <boolean name="multiple_insulin_use_basal_activity" value="false" />
+    <boolean name="debug_miband_use_custom_watchface" value="false" />
+    <string name="numberwall_x_param">90</string>
+    <string name="dexcom_account_name"></string>
+    <int name="color_treatment_dark" value="-13417472" />
+    <string name="plus_target_range">100</string>
+    <boolean name="bluejay_run_as_phone_collector" value="false" />
+    <boolean name="opennov_debug" value="false" />
+    <boolean name="show_graph_grid_time" value="true" />
+    <boolean name="play_sound_for_initial_calibration" value="true" />
+    <string name="wifi_recievers_addresses"></string>
+    <string name="calibrate_external_libre_2_algorithm_type">calibrate_raw</string>
+    <boolean name="show_statistics_relsd" value="true" />
+    <string name="persistent_high_repeat_mins">20</string>
+    <boolean name="show_showcase" value="true" />
+    <boolean name="automatically_turn_bluetooth_on" value="true" />
+    <boolean name="bluetails_enabled" value="false" />
+    <boolean name="use_gatt_refresh" value="true" />
+    <boolean name="show_medtrum_secondary" value="true" />
+    <boolean name="mongo_load_transmitter_data" value="false" />
+    <boolean name="share_upload" value="false" />
+    <int name="color_average1_line" value="-11171840" />
+    <boolean name="pebble_high_line" value="false" />
+    <boolean name="send_bridge_battery_to_nightscout" value="true" />
+    <boolean name="status_line_accuracy" value="false" />
+    <boolean name="detect_libre_sn_changes" value="true" />
+    <boolean name="show-unsmoothed-values-as-plugin" value="false" />
+    <boolean name="smart_alerting" value="true" />
+    <boolean name="external_blukon_algorithm" value="false" />
+    <string name="nsfollow_sample_period_in_minutes">5</string>
+    <boolean name="broadcast_data_through_intents" value="true" />
+    <string name="forced_language">en</string>
+    <boolean name="pebble_show_bwp" value="false" />
+    <boolean name="pebble_show_arrows" value="true" />
+    <boolean name="smooth_heartrate" value="true" />
+    <boolean name="plus_whole_house" value="false" />
+    <int name="color_smb_line" value="-698777652" />
+    <boolean name="run_ble_scan_constantly" value="false" />
+    <boolean name="miband_feature_lift_to_wake" value="true" />
+    <string name="pendiq_pin">0000</string>
+    <boolean name="disable_wearG5_on_missedreadings" value="false" />
+    <boolean name="ongoing_notification_aodchipstyle" value="false" />
+    <boolean name="tidepool_dev_servers" value="false" />
+    <boolean name="ob1_g5_preemptive_restart_extended_time_travel" value="false" />
+    <boolean name="force_wearG5" value="false" />
+    <boolean name="pebble_vibrate_no_bluetooth" value="true" />
+    <boolean name="bluejay_button1_vibrate" value="true" />
+    <boolean name="use_custom_sync_key" value="true" />
+    <boolean name="skip_lan_uploads_when_no_lan" value="true" />
+    <boolean name="ob1_special_pairing_workaround" value="false" />
+    <int name="color_lower_flair_bar" value="-16777216" />
+    <string name="bg_unclear_readings_alert_snooze">20</string>
+    <boolean name="status_line_in" value="false" />
+    <boolean name="speak_twice" value="false" />
+    <boolean name="bg_to_speech" value="false" />
+    <boolean name="use_remote_motion" value="false" />
+    <boolean name="only_ever_use_wear_collector" value="false" />
+    <boolean name="blukon_unbonding" value="true" />
+    <boolean name="repeat_sound_in_vehicle_mode" value="true" />
+    <boolean name="bluejay_use_motion_wake" value="true" />
+    <string name="xdrip_webservice_secret"></string>
+    <boolean name="wake_phone_during_alerts" value="false" />
+    <int name="bluejay_screen_timeout" value="6" />
+    <boolean name="dex_share_us_acct" value="true" />
+    <boolean name="speak_readings_in_vehicle_mode" value="false" />
+    <boolean name="force_english" value="false" />
+    <boolean name="xdrip_webservice" value="true" />
+    <boolean name="bluejay_collector_enabled" value="true" />
+    <string name="bugfender_appid"></string>
+    <boolean name="bluejay_send_alarms" value="true" />
+    <boolean name="notification_channels_grouping" value="false" />
+    <string name="inpen_prime_minutes">2</string>
+    <boolean name="navigation_drawer_learned" value="true" />
+    <long name="last_update_check_time" value="1776711529576" />
+    <string name="web_deposit_url">http://192.168.0.5:2080/</string>
+    <boolean name="persistent_high_alert_override_silent" value="false" />
+    <boolean name="disable_alerts_stale_data" value="false" />
+    <boolean name="nsfollow_download_treatments" value="false" />
+    <string name="webfollow_username"></string>
+    <boolean name="wear_sync" value="false" />
+    <string name="clfollow_grace_period">30</string>
+    <boolean name="close_gatt_on_ble_disconnect" value="false" />
+    <string name="noise_block_level">200</string>
+    <boolean name="opennov_hide_priming" value="false" />
+    <boolean name="warn_nightscout_failures" value="true" />
+    <boolean name="use_non_fixed_li_parameters" value="true" />
+    <boolean name="aod_use_center" value="true" />
+    <boolean name="blueReader_restdays_on_home" value="true" />
+    <boolean name="show_buttons_in_alerts" value="false" />
+    <boolean name="show_g_prediction" value="false" />
+    <boolean name="use_xdrip_cloud_sync" value="false" />
+    <boolean name="miband_screen_notifications" value="true" />
+    <boolean name="use_rfduino_bluetooth" value="false" />
+    <boolean name="save_db_ondemand" value="false" />
+    <boolean name="infrequent_calibration" value="true" />
+    <boolean name="broadcast_snooze" value="false" />
+    <boolean name="allow_samsung_workaround" value="true" />
+    <boolean name="desert_use_https" value="false" />
+    <boolean name="show_statistics_gvi" value="true" />
+    <boolean name="use_nfc_any_tag" value="true" />
+    <string name="dex_specified_slot"></string>
+    <boolean name="show_statistics_pgs" value="true" />
+    <boolean name="aod_use_top" value="true" />
+    <string name="numberwall_y_param">45</string>
+    <boolean name="show_bwp" value="false" />
+    <boolean name="broadcast_data_use_best_glucose" value="true" />
+    <boolean name="act_as_motion_master" value="false" />
+    <boolean name="accept_external_status" value="true" />
+    <string name="cloud_storage_mongodb_device_status_collection">devicestatus</string>
+    <boolean name="number_icon_tested" value="false" />
+    <boolean name="always_unbond_G5" value="false" />
+    <int name="speech_speed" value="7" />
+    <string name="profile_insulin_sensitivity_default">54</string>
+    <boolean name="webfollow_use_proxy" value="false" />
+    <boolean name="show_target_line" value="false" />
+    <string name="webfollow_master_domain">beonlabs</string>
+    <string name="opennov_prime_units">2.0</string>
+    <string name="units">mgdl</string>
+    <boolean name="pref_amazfit_other_alert_enable_key" value="false" />
+    <boolean name="status_line_low" value="false" />
+    <boolean name="widget_status_line" value="false" />
+    <string name="treatment_fingerstick_calibration_usage">auto</string>
+    <boolean name="predict_use_momentum" value="true" />
+    <string name="nfc_expiry_days">14.5</string>
+    <boolean name="show_statistics_a1cestimate" value="true" />
+    <boolean name="bluetooth_meter_enabled" value="false" />
+    <boolean name="ascending_volume_to_medium" value="false" />
+    <boolean name="start_snoozed" value="false" />
+    <boolean name="compact_persistent_notification" value="false" />
+    <string name="bridge_battery_alert_level">30</string>
+    <boolean name="use_double_calibrations" value="true" />
+    <boolean name="bg_unclear_readings_alerts" value="false" />
+    <boolean name="status_line_a1c_dcct" value="false" />
+    <boolean name="low_value_is_forecast_low_threshold" value="true" />
+    <boolean name="calibration_alerts_repeat" value="true" />
+    <boolean name="Libre2_showSensors" value="false" />
+    <string name="webfollow_proxy_password"></string>
+    <boolean name="extra_status_stats_24h" value="false" />
+    <boolean name="blueReader_turn_off" value="false" />
+    <boolean name="extra_status_calibration_plugin" value="false" />
+    <boolean name="pref_amazfit_watchface_graph" value="false" />
+    <boolean name="calibration_notifications" value="false" />
+    <string name="retention_days_bg_reading">180</string>
+    <boolean name="allow_testing_with_dead_sensor" value="false" />
+    <boolean name="show_libre_trend_line" value="false" />
+    <boolean name="miband_screen_timer" value="true" />
+    <boolean name="run_G5_ble_tasks_on_uithread" value="false" />
+    <boolean name="status_line_calibration_long" value="true" />
+    <boolean name="plus_extra_features" value="true" />
+    <int name="color_treatment_dot_foreground" value="-8934912" />
+    <boolean name="lefun_option_call_notifications" value="false" />
+    <boolean name="parakeet_status_alerts" value="false" />
+    <boolean name="calibration_alerts_override_silent" value="true" />
+    <boolean name="pref_amazfit_widget_graph_dots" value="false" />
+    <string name="bluetooth_watchdog_timer">20</string>
+    <boolean name="inpen_sounds" value="true" />
+    <boolean name="nfc_scan_homescreen" value="false" />
+    <string name="dex_collection_method">DexcomG5</string>
+    <boolean name="show_recent_average_line" value="true" />
+    <boolean name="use_transmiter_pl_bluetooth" value="false" />
+    <boolean name="miband_feature_visibility" value="true" />
+    <string name="shfollow_user"></string>
+    <string name="current_calibration_plugin">None</string>
+    <boolean name="enlarge_fonts_on_large_screens" value="true" />
+    <boolean name="blueReader_suppressuglystatemsg" value="false" />
+    <boolean name="rising_alert" value="false" />
+    <boolean name="display_glucose_from_plugin" value="false" />
+    <boolean name="confirm_snooze_to_remote" value="false" />
+    <string name="persistent_high_alert_sound">content://settings/system/notification_sound</string>
+    <boolean name="buttons_silence_alert" value="true" />
+    <boolean name="calibration_alerts_while_charging" value="true" />
+    <boolean name="plus_accept_follower_actions" value="true" />
+    <boolean name="show_wear_treatments" value="false" />
+    <boolean name="use_ob1_g5_collector_service" value="true" />
+    <string name="libre_filter_length">25</string>
+    <int name="color_inrange_values" value="-13388314" />
+    <boolean name="enable_iob_in_api_endpoint" value="true" />
+    <boolean name="ob1_avoid_scanning" value="false" />
+    <boolean name="opennov_enabled" value="false" />
+    <boolean name="show_momentum_working_line" value="false" />
+    <boolean name="high_priority_notifications" value="true" />
+    <boolean name="pref_amazfit_BG_alert_enable_key" value="false" />
+    <boolean name="bluejay_beep_on_connect" value="false" />
+    <boolean name="show_graph_grid_glucose" value="true" />
+    <boolean name="use_wear_heartrate" value="true" />
+    <boolean name="accept_nsclient_treatments" value="true" />
+    <boolean name="broadcast_service_enabled" value="true" />
+    <boolean name="status_line_external_status" value="false" />
+    <boolean name="ob1_g5_use_transmitter_alg" value="true" />
+    <boolean name="play_sound_in_vehicle_mode" value="true" />
+    <boolean name="has_been_explicitly_set_persistent_high_alert_override_silent" value="true" />
+    <string name="disable_wearG5_on_missedreadings_level">30</string>
+    <string name="shfollow_pass"></string>
+    <boolean name="always_discover_services" value="true" />
+    <boolean name="widget_range_lines" value="false" />
+    <boolean name="medtrum_use_native" value="true" />
+    <string name="g5-battery-warning-level">275</string>
+    <string name="speak_readings_custom_language"></string>
+    <boolean name="status_line_avg" value="false" />
+    <string name="persistent_high_threshold">170</string>
+    <boolean name="send_snooze_to_remote" value="false" />
+    <int name="color_calibration_dot_foreground" value="-48060" />
+    <boolean name="auto_update_download" value="true" />
+    <boolean name="ob1_g5_fallback_to_xdrip" value="false" />
+    <boolean name="show_data_tables" value="false" />
+    <boolean name="pebble_tiny_dots" value="false" />
+    <boolean name="miband_send_readings_as_notification" value="true" />
+    <boolean name="number_wall_on_lockscreen" value="false" />
+    <string name="alert_audio_focus">AUDIOFOCUS_NONE</string>
+    <string name="bg_alert_profile">High</string>
+    <boolean name="use_nfc_scan" value="false" />
+    <int name="blueReader_turn_off_value" value="5" />
+    <boolean name="clfollow_download_notifications" value="false" />
+    <int name="bluejay_backfill_hours" value="3" />
+    <boolean name="show_home_on_boot" value="false" />
+    <boolean name="cloud_storage_api_use_mobile" value="true" />
+    <boolean name="lefun_enabled" value="false" />
+    <boolean name="show_full_average_line" value="false" />
+    <boolean name="pref_amazfit_widget_graph" value="false" />
+    <boolean name="show_noise_workings" value="false" />
+    <boolean name="excessive_wakelocks" value="false" />
+    <boolean name="bluejay_option_24_hour_clock" value="false" />
+    <boolean name="miband_graph_enable" value="true" />
+    <boolean name="status_line_capture_percentage" value="false" />
+    <boolean name="ob1_g5_preemptive_restart" value="false" />
+    <boolean name="public_notifications" value="false" />
+    <boolean name="send_ob1dex_tx_battery_to_nightscout" value="false" />
+    <boolean name="pebble_vibrate_no_signal" value="false" />
+    <boolean name="pebble_show_delta" value="true" />
+    <boolean name="clfollow_download_meals" value="true" />
+    <string name="inpen_prime_units">2.0</string>
+    <boolean name="sync_wear_logs" value="false" />
+    <int name="color_predictive" value="-5609780" />
+    <string name="medtrum_a_hex"></string>
+    <boolean name="broadcast_to_pebble" value="false" />
+    <boolean name="miband_screen_weather" value="true" />
+    <boolean name="bluetooth_use_scan" value="false" />
+    <boolean name="miband_screen_step_counter" value="true" />
+    <string name="libre2_enable_bluetooth_streaming">enable_streaming_ask</string>
+    <boolean name="bluetooth_allow_background_scans" value="true" />
+    <boolean name="status_line_calibration_short" value="false" />
+    <boolean name="enable_crashlytics" value="true" />
+    <boolean name="bluejay_timing_failsafe" value="false" />
+    <boolean name="graph_smoothing" value="false" />
+    <boolean name="libre_whole_house_collector" value="false" />
+    <string name="highValue">170</string>
+    <int name="color_bad_values" value="-1" />
+    <boolean name="bluejay_delta_trend" value="false" />
+    <boolean name="accept_broadcast_calibrations" value="true" />
+    <string name="debug_miband_image_offset">0</string>
+    <string name="disable_alerts_stale_data_minutes">15</string>
+    <boolean name="ob1_g5_preemptive_restart_alert" value="true" />
+    <int name="color_number_wall" value="-1118482" />
+    <boolean name="cloud_storage_influxdb_enable" value="false" />
+    <boolean name="smart_snoozing" value="true" />
+    <int name="miband_nightmode_interval" value="6" />
+    <boolean name="ob1_g5_defer_preemptive_restart_all_firmwares" value="false" />
+    <boolean name="miband_feature_locale_24_hour" value="true" />
+    <boolean name="ongoing_notification_channel" value="false" />
+    <boolean name="bg_compensate_noise_ultrasensitive" value="false" />
+    <string name="dexcom_account_password"></string>
+    <boolean name="status_line_a1c_ifcc" value="false" />
+    <boolean name="enable_bugfender" value="false" />
+    <boolean name="bg_unclear_readings_alert_enable_alerts_reraise" value="false" />
+    <boolean name="bluetooth_meter_for_calibrations_auto" value="false" />
+    <boolean name="run_service_in_foreground" value="true" />
+    <boolean name="send_treatments_to_nightscout" value="true" />
+    <boolean name="miband_collect_heartrate" value="true" />
+    <boolean name="remote_snoozes_wifi_match" value="true" />
+    <boolean name="nightscout_device_append_source_info" value="false" />
+    <int name="bluejay_wake_velocity" value="6" />
+    <boolean name="bg_to_speech_trend" value="true" />
+    <boolean name="show_statistics_sd" value="true" />
+    <boolean name="bluetooth_meter_play_sounds" value="true" />
+    <int name="color_smb_icon" value="-723593149" />
+    <boolean name="inpen_enabled" value="false" />
+    <string name="low_predict_alarm_level">40</string>
+    <boolean name="store_sensor_location" value="false" />
+    <boolean name="rewrite_history" value="false" />
+    <boolean name="miband_screen_step_calories" value="true" />
+    <boolean name="ob1_g5_restart_sensor" value="false" />
+    <int name="color_widget_chart_background" value="-1291845632" />
+    <boolean name="alert_raise_for_sensor_expiry" value="false" />
+    <boolean name="blueReader_writebatterylog" value="false" />
+    <boolean name="bluejay_send_to_another_xdrip" value="false" />
+    <boolean name="nightlite-enabled" value="false" />
+    <boolean name="simulations_enabled" value="true" />
+    <string name="amazfit_widget_graph_hours">4</string>
+    <boolean name="tidepool_no_treatments" value="false" />
+    <string name="bg_unclear_readings_minutes">90</string>
+    <boolean name="libre_one_minute" value="false" />
+    <boolean name="enable_telemetry" value="true" />
+    <string name="persistent_high_threshold_mins">60</string>
+    <boolean name="debug_miband_disable_hight_mtu" value="false" />
+    <boolean name="bg_to_speech_shortcut" value="false" />
+    <boolean name="bluetooth_watchdog" value="true" />
+    <string name="update_channel">beta</string>
+    <string name="cloud_storage_mongodb_uri">mongodb://{user}:{password}@{host}.mongolab.com:{11111}/{database}</string>
+    <boolean name="show_filtered_curve" value="true" />
+    <boolean name="bluejay_option_call_notifications" value="false" />
+    <string name="clfollow_missed_poll_interval">1</string>
+    <string name="nsfollow_url"></string>
+    <boolean name="pebble_low_line" value="false" />
+    <string name="pebble_special_text">BAZINGA!</string>
+    <string name="webfollow_password"></string>
+    <boolean name="plus_show_reminders" value="true" />
+    <boolean name="lefun_locale_12_hour" value="true" />
+    <boolean name="requested_ignore_battery_optimizations_new" value="false" />
+    <string name="calibration_snooze">20</string>
+    <boolean name="miband_screen_step_distance" value="true" />
+    <boolean name="opennov_play_sounds" value="true" />
+    <boolean name="accept_remote_snoozes" value="false" />
+    <string name="default_ymin">40</string>
+    <boolean name="miband_screen_status" value="true" />
+    <int name="color_treatment" value="-8934912" />
+    <boolean name="display_bridge_battery" value="true" />
+    <boolean name="high_value_is_persistent_high_threshold" value="true" />
+    <boolean name="status_line_royce_ratio" value="false" />
+    <boolean name="tidepool_new_auth" value="true" />
+    <boolean name="plugin_plot_on_graph" value="false" />
+    <int name="speech_pitch" value="12" />
+    <boolean name="miband_screen_more" value="true" />
+    <boolean name="persistent_high_alert_enabled" value="false" />
+    <boolean name="status_line_time" value="false" />
+    <string name="forecast_low_threshold">70</string>
+    <string name="nightlite-api-url"></string>
+    <boolean name="vehicle_mode_via_car_audio" value="false" />
+    <boolean name="pref_dex_collection_polling" value="false" />
+    <int name="color_low_bg_values" value="-3995383" />
+    <boolean name="cloud_storage_api_download_enable" value="true" />
+    <boolean name="inpen_detect_priming" value="true" />
+    <boolean name="show_basal_line" value="true" />
+    <string name="cloud_storage_influxdb_username">root</string>
+    <boolean name="miband_screen_nfc" value="false" />
+    <boolean name="use_nfc_multiblock" value="true" />
+    <boolean name="Eversense_one_minute" value="false" />
+    <boolean name="use_pluggable_alg_as_primary" value="false" />
+    <boolean name="extra_status_line" value="false" />
+    <boolean name="enable_wearG5" value="false" />
+    <boolean name="no_alarms_during_calls" value="true" />
+    <boolean name="use_flair_colors" value="false" />
+    <boolean name="status_line_carbs" value="false" />
+    <boolean name="parakeet_charge_silent" value="false" />
+    <boolean name="raise_low_limit_in_vehicle_mode" value="false" />
+    <int name="color_secondary_glucose_value" value="-1972679629" />
+    <boolean name="pebble_filtered_line" value="false" />
+    <string name="node_wearG5"></string>
+    <boolean name="motion_tracking_enabled" value="false" />
+    <boolean name="bluejay_enabled" value="false" />
+    <boolean name="bluejay_run_phone_collector" value="true" />
+    <boolean name="use_proper_ongoing" value="true" />
+    <string name="profile_carb_absorption_default">35</string>
+    <string name="calibration_notification_sound">content://settings/system/notification_sound</string>
+    <boolean name="always_show_bwp" value="false" />
+    <boolean name="status_line_stdev" value="false" />
+    <string name="webfollow_proxy_address"></string>
+    <boolean name="clfollow_download_boluses" value="true" />
+    <boolean name="accept_broadcast_snooze" value="false" />
+    <boolean name="pebble_show_delta_units" value="false" />
+    <string name="share_test_key">SM</string>
+    <boolean name="use_pebble_health" value="true" />
+    <int name="color_low_predicted_critical_note" value="-3995383" />
+    <int name="color_treatment_dot_background" value="-1" />
+    <boolean name="accept_nsclient_sgv" value="true" />
+    <int name="color_target_line" value="-5987319" />
+    <boolean name="delay_ascending_3min" value="true" />
+    <string name="extra_tags_for_logging"></string>
+    <boolean name="libre_use_smoothed_data" value="false" />
+    <boolean name="bluejay_send_readings" value="true" />
+    <boolean name="miband_screen_heart_rate" value="true" />
+    <boolean name="bluetooth_use_blemanager" value="false" />
+    <boolean name="Libre2_showRawGraph" value="false" />
+    <boolean name="follower_chime" value="false" />
+    <boolean name="disable_all_sync" value="false" />
+    <string name="pebble_trend_period">3</string>
+    <string name="cloud_storage_influxdb_database">xdrip</string>
+    <int name="color_filtered" value="-6250336" />
+    <boolean name="nfc_show_age" value="true" />
+    <boolean name="status_line_realtime_capture_percentage" value="false" />
+    <boolean name="ob1_initiate_bonding_flag" value="true" />
+    <boolean name="pref_amazfit_enable_key" value="false" />
+    <string name="webfollow_proxy_username"></string>
+    <string name="cloud_storage_influxdb_uri">https://{host}:{port}</string>
+    <string name="falling_bg_val">3</string>
+    <boolean name="old_school_calibration_mode" value="false" />
+    <string name="nsfollow_lag">0</string>
+    <boolean name="bg_missed_alerts_override_silent" value="false" />
+    <string name="profile_carb_ratio_default">10</string>
+    <boolean name="health_connect_receive" value="true" />
+    <boolean name="multiple_insulin_types" value="false" />
+    <string name="rising_bg_val">3</string>
+    <string name="web_deposit_serial">ABC123</string>
+    <string name="wear_logs_prefix">wear</string>
+    <string name="xplus_liver_maximpact">0.8</string>
+    <boolean name="lefun_send_readings" value="true" />
+    <boolean name="lefun_feature_lift_to_wake" value="true" />
+    <string name="desert_sync_master_ip"></string>
+    <boolean name="status_line_insulin" value="false" />
+    <boolean name="bg_to_speech_repeat_twice" value="false" />
+    <boolean name="bluejay_use_broadcast_api" value="false" />
+    <boolean name="use_notification_channels" value="false" />
+    <boolean name="show_smb_icons" value="true" />
+    <int name="color_basal_tbr" value="-751734050" />
+    <boolean name="bluejay_local_alarms" value="true" />
+    <boolean name="webfollow_proxy_type_http" value="false" />
+    <int name="color_step_counter1" value="1042912123" />
+    <boolean name="always_get_new_keys" value="true" />
+    <int name="color_step_counter2" value="1014154176" />
+    <boolean name="plus_follow_geolocation" value="true" />
+    <int name="color_predictive_dark" value="-8978262" />
+    <boolean name="use_number_icon_large" value="false" />
+    <boolean name="miband_feature_units" value="true" />
+    <boolean name="predict_lows_alarm" value="false" />
+    <boolean name="disable_battery_warning" value="false" />
+    <string name="cloud_storage_api_base">https://yourpassphrase@{YOUR-SITE}.azurewebsites.net/api/v1/</string>
+    <int name="color_high_bg_values" value="-17613" />
+    <boolean name="bluetooth_meter_for_calibrations" value="false" />
+</map>
