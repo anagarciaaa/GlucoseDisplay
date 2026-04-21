@@ -120,16 +120,6 @@ adb shell run-as com.eveningoutpost.dexdrip chmod 644 /data/data/com.eveningoutp
 
 ---
 
-## Before Every Ride
-
-Force stop xDrip on your phone via **Settings → Apps → xDrip → Force Stop**. The Stelo can only bond to one device at a time so the phone must release the connection before the Karoo can take over.
-
-## After Every Ride
-
-Restart xDrip on your phone. It will re-bond with the Stelo automatically on the next advertisement cycle.
-
----
-
 # ConneXX
 
 ConneXX extends the Hammerhead Karoo sample app with two features: partner metric sharing over Bluetooth Classic, and live blood glucose display from a Dexcom Stelo CGM sensor.
