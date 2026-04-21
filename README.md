@@ -318,9 +318,6 @@ Scanning errors 4+
 Mismatch error
   → Wrong transmitter ID — check the 4-char ID on the sensor applicator
 
-Connection drops after first reading
-  → Restore write permissions (Step 6) then restart collector
-
 ---
 
 ## How It Works
