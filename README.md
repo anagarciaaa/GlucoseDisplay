@@ -1,123 +1,91 @@
 # Stelo → Karoo 2 Direct BLE Setup
-
+ 
 This guide explains how to set up a direct Bluetooth connection between a Dexcom Stelo CGM sensor and a Hammerhead Karoo 2 cycling computer using a modified xDrip build. No phone is needed during rides.
-
+ 
 ---
-
+ 
 ## What You Need
-
+ 
 - Hammerhead Karoo 2
 - Dexcom Stelo sensor
 - Windows PC with ADB installed
 - USB cable
-- The following files in `C:\Android\platform-tools\`:
-  - `xDrip-Karoo-prod-debug.apk`
-  - `inject_prefs_full.sh`
-
+- The following files in `C:\Android\platform-tools\` (available in the GitHub repository):
+  - `xDrip-working.apk`
+  - `working_prefs.xml`
+> For ADB installation and APK deployment setup, follow this guide:
+> https://www.dcrainmaker.com/2021/02/how-to-sideload-android-apps-on-your-hammerhead-karoo-1-karoo-2.html
+ 
 ---
-
+ 
 ## Step 1 — Enable Developer Mode on Karoo
-
+ 
 1. On the Karoo go to **Settings → About**
 2. Tap **Build Number** 7 times
 3. Go to **Settings → Developer Options**
 4. Enable **USB Debugging**
 5. Connect the Karoo to your PC via USB
 6. Accept the USB debugging prompt on the Karoo screen
-
 ---
-
+ 
 ## Step 2 — Verify ADB Connection
-
+ 
 ```cmd
-cd C:\Android\platform-tools
 adb devices
 ```
-
+ 
 You should see something like `KAROO20XXXXXXX    device`. If it says `unauthorized` check the Karoo screen and tap Allow.
-
+ 
 ---
-
-## Step 3 — Install Modified xDrip
-
+ 
+## Step 3 — Install xDrip on Karoo
+ 
 Uninstall any existing xDrip first:
-
+ 
 ```cmd
 adb uninstall com.eveningoutpost.dexdrip
 ```
-
-Then install the debug build:
-
+ 
+Then install:
+ 
 ```cmd
-adb install xDrip-Karoo-prod-debug.apk
+adb install xDrip-working.apk
 ```
-
+ 
 ---
-
-## Step 4 — Inject Credentials
-
-This replaces the QR code scan step in the standard xDrip G7/Stelo setup guide.
-
-First open xDrip on the Karoo and wait 15 seconds for it to fully initialize. Then run these commands:
-
-**Push and enable the injection script:**
+ 
+## Step 4 — Push Prefs to Karoo
+ 
+Open xDrip on the Karoo and when prompted allow all permissions. Then go to **Menu → Settings → Transmitter ID** and enter your 4-character Stelo transmitter ID printed on the sensor applicator. Wait 15 seconds for xDrip to fully initialize, then run these commands without closing xDrip:
+ 
 ```cmd
-adb push inject_prefs_full.sh /data/local/tmp/inject_prefs_full.sh
-adb shell chmod 755 /data/local/tmp/inject_prefs_full.sh
-```
-
-> `chmod 755` makes the script executable so the shell can run it.
-
-**Run the injection while xDrip is open:**
-```cmd
-adb shell run-as com.eveningoutpost.dexdrip sh /data/local/tmp/inject_prefs_full.sh
-```
-
-You should see:
-```
-keks_p1 OK
-keks_p2 OK
-keks_p3 OK
-dex_txid OK
-collection_method OK
-use_ob1 OK
-Done!
-```
-
-If anything shows FAILED wait 10 seconds and run the injection command again.
-
-**Lock the prefs file so xDrip cannot overwrite it on restart:**
-```cmd
+adb push working_prefs.xml /data/local/tmp/working_prefs.xml
+adb shell run-as com.eveningoutpost.dexdrip cp /data/local/tmp/working_prefs.xml /data/data/com.eveningoutpost.dexdrip/shared_prefs/com.eveningoutpost.dexdrip_preferences.xml
 adb shell run-as com.eveningoutpost.dexdrip chmod 444 /data/data/com.eveningoutpost.dexdrip/shared_prefs/com.eveningoutpost.dexdrip_preferences.xml
-```
-
-**Restart xDrip:**
-```cmd
 adb shell am force-stop com.eveningoutpost.dexdrip
 adb shell am start -n com.eveningoutpost.dexdrip/.Home
 ```
-
+ 
+> `chmod 444` locks the file as read-only so xDrip cannot overwrite the credentials on restart.
+ 
 ---
-
-## Step 5 — Configure xDrip on Karoo
-
-1. In xDrip tap **Menu → Settings → Transmitter ID**
-2. Enter your 4-character Stelo transmitter ID (printed on the sensor applicator)
-3. Go to **Menu → System Status → Dex Status**
-4. Tap **Restart Collector**
-
-Brain State should move from Scanning to Authorizing to Connected. First glucose reading arrives within 5 minutes.
-
+ 
+## Step 5 — Connect to Stelo
+ 
+1. In xDrip go to **Menu → System Status → Dex Status**
+2. Tap **Restart Collector**
+3. Brain State should move from Scanning to Authorizing to Connected
+4. First glucose reading arrives within 5 minutes
 ---
-
+ 
 ## Step 6 — Restore Write Permissions
-
-After confirming the connection is working, restore normal file permissions:
-
+ 
+After confirming the connection is working:
+ 
 ```cmd
 adb shell run-as com.eveningoutpost.dexdrip chmod 644 /data/data/com.eveningoutpost.dexdrip/shared_prefs/com.eveningoutpost.dexdrip_preferences.xml
 ```
-
+ 
 ---
 
 # ConneXX
