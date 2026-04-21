@@ -130,25 +130,6 @@ Restart xDrip on your phone. It will re-bond with the Stelo automatically on the
 
 ---
 
-## Troubleshooting
-
-| Problem | Fix |
-|---|---|
-| `run-as: package not debuggable` | Wrong APK installed — uninstall and reinstall `xDrip-Karoo-prod-debug.apk` |
-| `keks_p1 FAILED` during injection | xDrip prefs file not created yet — open xDrip and wait 15 seconds first |
-| Missing QR code after injection | Injection didn't take — repeat Step 4 |
-| Scanning errors 4+ | Phone xDrip still running — force stop it |
-| Mismatch error | Wrong transmitter ID — check the 4-char ID on the sensor applicator |
-| Connection drops after first reading | Restore write permissions (Step 6) then restart collector |
-
----
-
-## How It Works
-
-The Stelo uses a certificate-based BLE authentication protocol internally called KEKS. During initial phone pairing, three certificate parts (`keks_p1`, `keks_p2`, `keks_p3`) are stored in xDrip's preferences. Without these the Karoo shows "Missing QR code" and cannot connect.
-
-The injection script writes these certificates directly into xDrip's preferences file on the Karoo, giving it everything it needs to authenticate with the Stelo over BLE without a phone.
-
 # ConneXX
 
 ConneXX extends the Hammerhead Karoo sample app with two features: partner metric sharing over Bluetooth Classic, and live blood glucose display from a Dexcom Stelo CGM sensor.
@@ -222,76 +203,6 @@ Once installed, ConneXX registers all data fields automatically when a ride star
 
 ---
 
-## Stelo → Karoo 2 Direct BLE Setup
-
-Direct Bluetooth connection between a Dexcom Stelo CGM sensor and a Hammerhead Karoo 2 using a modified xDrip build. No phone is needed during rides.
-
-### What You Need
-- Hammerhead Karoo 2
-- Dexcom Stelo sensor
-- Windows PC with ADB installed
-- USB cable
-- The following files in C:\Android\platform-tools\:
-  - xDrip-Karoo-prod-debug.apk
-  - inject_prefs_full.sh
-
-### Step 1 — Enable Developer Mode on Karoo
-1. On the Karoo go to Settings → About
-2. Tap Build Number 7 times
-3. Go to Settings → Developer Options
-4. Enable USB Debugging
-5. Connect the Karoo to your PC via USB
-6. Accept the USB debugging prompt on the Karoo screen
-
-### Step 2 — Verify ADB Connection
-cd C:\Android\platform-tools
-adb devices
-
-You should see something like `KAROO20XXXXXXX    device`. If it says `unauthorized`, tap Allow.
-
-### Step 3 — Install Modified xDrip
-adb uninstall com.eveningoutpost.dexdrip
-adb install xDrip-Karoo-prod-debug.apk
-
-### Step 4 — Inject Credentials
-Open xDrip on the Karoo and wait 15 seconds, then run:
-
-adb push inject_prefs_full.sh /data/local/tmp/inject_prefs_full.sh
-adb shell chmod 755 /data/local/tmp/inject_prefs_full.sh
-adb shell run-as com.eveningoutpost.dexdrip sh /data/local/tmp/inject_prefs_full.sh
-
-Expected output:
-keks_p1 OK
-keks_p2 OK
-keks_p3 OK
-dex_txid OK
-collection_method OK
-use_ob1 OK
-Done!
-
-If anything shows FAILED, wait 10 seconds and run the injection again.
-
-Lock the prefs file:
-adb shell run-as com.eveningoutpost.dexdrip chmod 444 /data/data/com.eveningoutpost.dexdrip/shared_prefs/com.eveningoutpost.dexdrip_preferences.xml
-
-Restart xDrip:
-adb shell am force-stop com.eveningoutpost.dexdrip
-adb shell am start -n com.eveningoutpost.dexdrip/.Home
-
-### Step 5 — Configure xDrip on Karoo
-1. Tap Menu → Settings → Transmitter ID
-2. Enter your 4-character Stelo transmitter ID (printed on the sensor applicator)
-3. Go to Menu → System Status → Dex Status
-4. Tap Restart Collector
-
-Brain State should move: Scanning → Authorizing → Connected
-First glucose reading arrives within 5 minutes.
-
-### Step 6 — Restore Write Permissions
-adb shell run-as com.eveningoutpost.dexdrip chmod 644 /data/data/com.eveningoutpost.dexdrip/shared_prefs/com.eveningoutpost.dexdrip_preferences.xml
-
----
-
 ## Before & After Every Ride
 
 Before: Force stop xDrip on your phone via Settings → Apps → xDrip → Force Stop.
@@ -303,20 +214,14 @@ After: Restart xDrip on your phone. It will re-bond with the Stelo automatically
 
 ## Troubleshooting
 
-run-as: package not debuggable
-  → Wrong APK installed — uninstall and reinstall xDrip-Karoo-prod-debug.apk
-
-keks_p1 FAILED during injection
-  → xDrip prefs file not created yet — open xDrip and wait 15 seconds first
-
-Missing QR code after injection
-  → Injection didn't take — repeat Step 4
-
-Scanning errors 4+
-  → Phone xDrip still running — force stop it
-
-Mismatch error
-  → Wrong transmitter ID — check the 4-char ID on the sensor applicator
+| Problem | Fix |
+|---|---|
+| `run-as: package not debuggable` | Wrong APK installed — uninstall and reinstall `xDrip-Karoo-prod-debug.apk` |
+| `keks_p1 FAILED` during injection | xDrip prefs file not created yet — open xDrip and wait 15 seconds first |
+| Missing QR code after injection | Injection didn't take — repeat Step 4 |
+| Scanning errors 4+ | Phone xDrip still running — force stop it |
+| Mismatch error | Wrong transmitter ID — check the 4-char ID on the sensor applicator |
+| Connection drops after first reading | Restore write permissions (Step 6) then restart collector |
 
 ---
 
