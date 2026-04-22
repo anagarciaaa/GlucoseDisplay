@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Connexx</string>
+    <string name="disconnected">Disconnected</string>
+</resources>

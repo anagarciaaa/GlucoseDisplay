@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="0dp"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/colorPrimary"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="41dp" />
+
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_width="188dp"
+            android:layout_height="58dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/edit_text_border"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Name"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="60dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Max Heart Rate"
+            android:textColor="@color/colorPrimary"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="41dp" />
+
+        <EditText
+            android:id="@+id/maxHrInput"
+            android:layout_width="188dp"
+            android:layout_height="58dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/edit_text_border"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Maximum HR"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="60dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Functional Threshold Power"
+            android:textColor="@color/colorPrimary"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="41dp" />
+
+        <EditText
+            android:id="@+id/ftpInput"
+            android:layout_width="188dp"
+            android:layout_height="58dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/edit_text_border"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="FTP"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="60dp" />
+    </LinearLayout>
+
+</LinearLayout>
